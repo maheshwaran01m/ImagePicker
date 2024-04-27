@@ -11,6 +11,7 @@
 		3D55BB132BDC9C41002148BB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D55BB122BDC9C41002148BB /* ContentView.swift */; };
 		3D55BB152BDC9C42002148BB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3D55BB142BDC9C42002148BB /* Assets.xcassets */; };
 		3D55BB182BDC9C42002148BB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3D55BB172BDC9C42002148BB /* Preview Assets.xcassets */; };
+		3D55BB212BDC9D1B002148BB /* ImageItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D55BB202BDC9D1B002148BB /* ImageItem.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,7 @@
 		3D55BB122BDC9C41002148BB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		3D55BB142BDC9C42002148BB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3D55BB172BDC9C42002148BB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		3D55BB202BDC9D1B002148BB /* ImageItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageItem.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,9 +80,18 @@
 		3D55BB1F2BDC9C59002148BB /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				3D55BB222BDC9DA8002148BB /* Pickers */,
 				3D55BB122BDC9C41002148BB /* ContentView.swift */,
 			);
 			path = Source;
+			sourceTree = "<group>";
+		};
+		3D55BB222BDC9DA8002148BB /* Pickers */ = {
+			isa = PBXGroup;
+			children = (
+				3D55BB202BDC9D1B002148BB /* ImageItem.swift */,
+			);
+			path = Pickers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -153,6 +164,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3D55BB212BDC9D1B002148BB /* ImageItem.swift in Sources */,
 				3D55BB132BDC9C41002148BB /* ContentView.swift in Sources */,
 				3D55BB112BDC9C41002148BB /* ImagePickerApp.swift in Sources */,
 			);
