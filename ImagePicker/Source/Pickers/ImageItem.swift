@@ -51,3 +51,43 @@ enum Constants {
   
   static let placeholder = UIImage(systemName: "photo.fill") ?? .add
 }
+
+// MARK: - ModelContext
+
+extension ModelContext {
+  
+  func deleteAndSave<T: PersistentModel>(_ model: T) {
+    delete(model)
+    try? save()
+  }
+  
+  func saveContext() {
+    try? save()
+  }
+}
+
+extension ModelContainer {
+  
+  @MainActor
+  func fetchObjects<T: PersistentModel>(
+    predicate: Predicate<T>? = nil, sort: [SortDescriptor<T>] = []) -> [T] {
+      do {
+        let fetchDescriptor = FetchDescriptor(predicate: predicate, sortBy: sort)
+        
+        return try mainContext.fetch(fetchDescriptor)
+      } catch {
+        return []
+      }
+    }
+  
+  func fetchObjects<T: PersistentModel>(
+    predicate: Predicate<T>? = nil, sort: [SortDescriptor<T>] = [], context: ModelContext) -> [T] {
+      do {
+        let fetchDescriptor = FetchDescriptor(predicate: predicate, sortBy: sort)
+        
+        return try context.fetch(fetchDescriptor)
+      } catch {
+        return []
+      }
+    }
+}
