@@ -12,6 +12,12 @@
 		3D55BB152BDC9C42002148BB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3D55BB142BDC9C42002148BB /* Assets.xcassets */; };
 		3D55BB182BDC9C42002148BB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3D55BB172BDC9C42002148BB /* Preview Assets.xcassets */; };
 		3D55BB212BDC9D1B002148BB /* ImageItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D55BB202BDC9D1B002148BB /* ImageItem.swift */; };
+		3D5825852BDD0C7800EE987B /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D5825842BDD0C7800EE987B /* DetailView.swift */; };
+		3D5825882BDD1E6A00EE987B /* EditFormViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D5825872BDD1E6A00EE987B /* EditFormViewModel.swift */; };
+		3D58258A2BDD1F6400EE987B /* EditFormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D5825892BDD1F6400EE987B /* EditFormView.swift */; };
+		3D58258C2BDD296D00EE987B /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D58258B2BDD296D00EE987B /* ImagePicker.swift */; };
+		3D58258E2BDD2F8500EE987B /* CameraPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D58258D2BDD2F8500EE987B /* CameraPicker.swift */; };
+		3D5825902BDD31D400EE987B /* CameraPermission.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D58258F2BDD31D400EE987B /* CameraPermission.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +27,12 @@
 		3D55BB142BDC9C42002148BB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3D55BB172BDC9C42002148BB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		3D55BB202BDC9D1B002148BB /* ImageItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageItem.swift; sourceTree = "<group>"; };
+		3D5825842BDD0C7800EE987B /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+		3D5825872BDD1E6A00EE987B /* EditFormViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditFormViewModel.swift; sourceTree = "<group>"; };
+		3D5825892BDD1F6400EE987B /* EditFormView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditFormView.swift; sourceTree = "<group>"; };
+		3D58258B2BDD296D00EE987B /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
+		3D58258D2BDD2F8500EE987B /* CameraPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraPicker.swift; sourceTree = "<group>"; };
+		3D58258F2BDD31D400EE987B /* CameraPermission.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraPermission.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +93,8 @@
 			isa = PBXGroup;
 			children = (
 				3D55BB222BDC9DA8002148BB /* Pickers */,
+				3D5825862BDD1E4E00EE987B /* EditView */,
+				3D5825842BDD0C7800EE987B /* DetailView.swift */,
 				3D55BB122BDC9C41002148BB /* ContentView.swift */,
 			);
 			path = Source;
@@ -90,8 +104,20 @@
 			isa = PBXGroup;
 			children = (
 				3D55BB202BDC9D1B002148BB /* ImageItem.swift */,
+				3D58258B2BDD296D00EE987B /* ImagePicker.swift */,
+				3D58258D2BDD2F8500EE987B /* CameraPicker.swift */,
+				3D58258F2BDD31D400EE987B /* CameraPermission.swift */,
 			);
 			path = Pickers;
+			sourceTree = "<group>";
+		};
+		3D5825862BDD1E4E00EE987B /* EditView */ = {
+			isa = PBXGroup;
+			children = (
+				3D5825872BDD1E6A00EE987B /* EditFormViewModel.swift */,
+				3D5825892BDD1F6400EE987B /* EditFormView.swift */,
+			);
+			path = EditView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -165,8 +191,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				3D55BB212BDC9D1B002148BB /* ImageItem.swift in Sources */,
+				3D5825852BDD0C7800EE987B /* DetailView.swift in Sources */,
 				3D55BB132BDC9C41002148BB /* ContentView.swift in Sources */,
+				3D58258C2BDD296D00EE987B /* ImagePicker.swift in Sources */,
+				3D5825902BDD31D400EE987B /* CameraPermission.swift in Sources */,
+				3D58258E2BDD2F8500EE987B /* CameraPicker.swift in Sources */,
 				3D55BB112BDC9C41002148BB /* ImagePickerApp.swift in Sources */,
+				3D58258A2BDD1F6400EE987B /* EditFormView.swift in Sources */,
+				3D5825882BDD1E6A00EE987B /* EditFormViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -302,6 +334,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"ImagePicker/MainResource/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Permission required to take photos with camera";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -331,6 +364,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"ImagePicker/MainResource/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Permission required to take photos with camera";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import SwiftData
 
 @main
 struct ImagePickerApp: App {
@@ -14,5 +15,6 @@ struct ImagePickerApp: App {
     WindowGroup {
       ContentView()
     }
+    .modelContainer(for: ImageItem.self)
   }
 }
